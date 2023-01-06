@@ -21,7 +21,7 @@ class UserInterestResource extends JsonResource
     {
         return [
             'id' => $this->resource->id,
-            'client_id' => $this->resource->client_id,
+            'client_id' => $this->resource->user_id,
             'interest_name' => $this->resource->interest_name,
             'user' => $this->whenLoaded('user'),
             'category' => $this->whenLoaded('category'),
