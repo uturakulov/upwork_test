@@ -17,4 +17,5 @@ Route::prefix('interests')
     ->middleware('auth:sanctum')
     ->group( function () {
         Route::get('/', [InterestsController::class, 'index']);
+        Route::post('/store', [InterestsController::class, 'store']);
 });
