@@ -30,6 +30,8 @@ class UserInterest extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['interest_name', 'user_id', 'category_id'];
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

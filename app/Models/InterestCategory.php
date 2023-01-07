@@ -21,4 +21,6 @@ use Illuminate\Support\Carbon;
 class InterestCategory extends Model
 {
     use HasFactory;
+
+    protected $fillable = ['category_name'];
 }
